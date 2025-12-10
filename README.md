@@ -14,7 +14,7 @@ EpiWatch combines affordable hardware with advanced machine learning to create a
 
 - **Real-time Motion Analysis**: 6-axis sensor data processed at 43Hz
 - **On-Device ML Inference**: Edge Impulse model runs locally on ESP32
-- **Multi-Modal Alerts**: LED, buzzer, and configurable output pins
+- **Multi-Modal Alerts**: buzzer and configurable output pins
 - **Low Power Design**: Optimized for wearable applications
 - **Confidence Averaging**: Reduces false positives through temporal smoothing
 - **Open Source**: Complete hardware design and software stack
@@ -26,7 +26,7 @@ EpiWatch combines affordable hardware with advanced machine learning to create a
 ### Core Components
 - **ESP32-DOIT DevKit V1**: Main microcontroller with WiFi/Bluetooth
 - **MPU-6050**: 6-axis accelerometer/gyroscope sensor
-- **Alert Components**: LED (Pin 2), Buzzer (Pin 23)
+- **Alert Components**: Buzzer (Pin 23)
 - **Power**: 18650 lithium battery or USB power
 
 ### Wiring Diagram
@@ -40,7 +40,6 @@ GPIO 22  →     SCL
 
 ESP32          Alerts
 -----          ------
-GPIO 2   →     LED
 GPIO 23  →     Buzzer
 ```
 
@@ -172,7 +171,7 @@ epiwatch_deployment/
 - **Seizure Threshold**: Confidence level for triggering alerts
 - **Sample Rate**: Data collection frequency (default: 43Hz)
 - **Confidence Samples**: Number of samples for temporal averaging
-- **Alert Pins**: GPIO assignments for LED and buzzer
+- **Alert Pins**: GPIO assignments of buzzer
 
 ### Customization
 The system can be extended with:
